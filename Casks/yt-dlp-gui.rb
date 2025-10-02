@@ -7,6 +7,9 @@ cask "yt-dlp-gui" do
   name "yt-dlp-gui"
   desc "A native SwiftUI interface for yt-dlp."
   homepage "https://github.com/ib729/yt-dlp-gui"
+ 
+  depends_on formula: "yt-dlp"
+  depends_on formula: "ffmpeg"
 
   app "yt-dlp-gui.app"
 
