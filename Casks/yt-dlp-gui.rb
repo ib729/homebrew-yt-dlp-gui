@@ -9,5 +9,11 @@ cask "yt-dlp-gui" do
   homepage "https://github.com/ib729/yt-dlp-gui"
 
   app "yt-dlp-gui.app"
+
+  postflight do
+    system_command "xattr",
+                   args: ["-r", "-d", "com.apple.quarantine", "#{appdir}/yt-dlp-gui.app"],
+                   sudo: true
+  end
 end
 
