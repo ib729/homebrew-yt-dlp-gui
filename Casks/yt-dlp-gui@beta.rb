@@ -1,13 +1,13 @@
-cask "yt-dlp-gui" do
-  version "1.1.1"
-  sha256 "6fb402133392475deecc982c3432f4ae8e8fcce19b284a99078387dffea44c9a" 
+cask "yt-dlp-gui@beta" do
+  version "1.2.0-beta"
+  sha256 ""
 
   url "https://github.com/ib729/yt-dlp-gui/releases/download/v#{version}/yt-dlp-gui-v#{version}.dmg"
-  
+
   name "yt-dlp-gui"
   desc "A native SwiftUI interface for yt-dlp."
   homepage "https://github.com/ib729/yt-dlp-gui"
- 
+
   depends_on formula: "yt-dlp"
   depends_on formula: "ffmpeg"
 
@@ -19,4 +19,3 @@ cask "yt-dlp-gui" do
                    sudo: true
   end
 end
-
